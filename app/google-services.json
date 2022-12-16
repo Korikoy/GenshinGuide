@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1033148394612",
+    "project_id": "genshin-infos",
+    "storage_bucket": "genshin-infos.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1033148394612:android:61c53e150dd2104e097521",
+        "android_client_info": {
+          "package_name": "com.example.genshininfos"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1033148394612-vuldq8rb035gg3efhpk6k5obp5f7scld.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAfAetQwrl4v0j9NDl1oSOzTmK79gb9_as"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1033148394612-vuldq8rb035gg3efhpk6k5obp5f7scld.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
