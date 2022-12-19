@@ -6,7 +6,7 @@
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
-        android:name="com.example.genshininfos.GenshinApplication"
+        android:name=".GenshinApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -14,13 +14,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.GenshinInfos">
         <activity
+            android:name=".presentation.auth.LoginActivity"
+            android:exported="false" />
+        <activity
             android:name=".presentation.auth.RegisterActivity"
             android:exported="true" />
         <activity
             android:name=".presentation.main.MainActivity"
             android:exported="true" />
         <activity
-            android:name=".presentation.auth.LoginActivity"
+            android:name=".presentation.auth.SplashActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
