@@ -5,6 +5,7 @@
       <map>
         <entry key="..\:/Users/PC/AndroidStudioProjects/GenshinInfos/app/src/main/res/drawable-v24/background_botao.xml" value="0.2145" />
         <entry key="..\:/Users/PC/AndroidStudioProjects/GenshinInfos/app/src/main/res/drawable-v24/background_caixa_texto.xml" value="0.2145" />
+        <entry key="..\:/Users/PC/AndroidStudioProjects/GenshinInfos/app/src/main/res/drawable/background.xml" value="0.2145" />
         <entry key="..\:/Users/PC/AndroidStudioProjects/GenshinInfos/app/src/main/res/layout/activity_login.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/PC/AndroidStudioProjects/GenshinInfos/app/src/main/res/layout/activity_main.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/PC/AndroidStudioProjects/GenshinInfos/app/src/main/res/layout/activity_register.xml" value="0.25" />
@@ -12,6 +13,8 @@
         <entry key="..\:/Users/PC/AndroidStudioProjects/GenshinInfos/app/src/main/res/layout/activity_splash.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/PC/AndroidStudioProjects/GenshinInfos/app/src/main/res/layout/content_register.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/PC/AndroidStudioProjects/GenshinInfos/app/src/main/res/layout/fragment_first.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/PC/AndroidStudioProjects/GenshinInfos/app/src/main/res/layout/toolbar.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/PC/AndroidStudioProjects/GenshinInfos/app/src/main/res/menu/home_menu.xml" value="0.36666666666666664" />
       </map>
     </option>
   </component>

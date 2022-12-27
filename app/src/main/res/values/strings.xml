@@ -18,4 +18,5 @@
     <string name="cadastrar">Cadastrar</string>
     <string name="nome">Nome</string>
     <string name="clique_aqui_para_voltar_ao_login">Clique aqui para voltar ao login!</string>
+    <string name="logout">Logout</string>
 </resources>
