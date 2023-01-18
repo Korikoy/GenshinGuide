@@ -6,19 +6,44 @@
     android:layout_height="match_parent"
     android:background="@drawable/background"
     tools:context=".presentation.main.MainActivity">
-    <include
-        android:id="@+id/toolbarID"
-        layout="@layout/toolbar" />
 
-    <GridView
-        android:background="#1e2231"
-        android:id="@+id/grid_view"
-        android:layout_width="379dp"
-        android:layout_height="576dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#1e1e28"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+
+    </FrameLayout>
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"
+        android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout"
+        app:layout_constraintVertical_bias="0.0">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recicleView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </ScrollView>
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
