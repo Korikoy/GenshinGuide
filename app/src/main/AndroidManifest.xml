@@ -14,6 +14,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.GenshinInfos">
         <activity
+            android:name=".presentation.main.CharacterActivity"
+            android:exported="false" />
+        <activity
             android:name=".presentation.auth.LoginActivity"
             android:exported="false" />
         <activity

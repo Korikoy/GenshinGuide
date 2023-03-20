@@ -1,6 +1,7 @@
 package com.example.genshininfos.presentation.main.adapter
 
 import android.content.Context
+import android.content.Intent
 import android.graphics.Bitmap
 import android.graphics.drawable.BitmapDrawable
 import android.view.LayoutInflater
@@ -13,6 +14,7 @@ import coil.request.SuccessResult
 import com.example.genshininfos.R
 import com.example.genshininfos.databinding.ActivityMainBinding
 import com.example.genshininfos.databinding.CardLayoutBinding
+import com.example.genshininfos.presentation.main.CharacterActivity
 import com.squareup.picasso.Picasso
 
 class CustomAdapter(modelList: List<String>, var contex: Context):RecyclerView.Adapter<CustomAdapter.MyViewHolder>() {
@@ -23,7 +25,10 @@ class CustomAdapter(modelList: List<String>, var contex: Context):RecyclerView.A
         init {
             binding.root.setOnClickListener{
                 val position:Int = adapterPosition
-                val charapter : String = characters[position]
+                val characterName : String = characters[position]
+                val intent = Intent(contex,CharacterActivity::class.java)
+                intent.putExtra("character",characterName)
+                contex.startActivity(intent)
             }
         }
     }
@@ -36,14 +41,23 @@ class CustomAdapter(modelList: List<String>, var contex: Context):RecyclerView.A
 
     override fun onBindViewHolder(holder: CustomAdapter.MyViewHolder, position: Int) {
         val character : String = characters[position]
-        holder.binding.name.text = character
-        val image = "https://api.genshin.dev/characters/$character/icon"
-        Picasso.get().load(image).into(holder.binding.image)
+        val persona = character.replace("-"," ")
+        val nameFristUpCase = persona.capitalizeWords()
+        holder.binding.name.text = nameFristUpCase
+        if(character.contains("traveler")){
+            val image = "https://api.genshin.dev/characters/$character/icon"
+            Picasso.get().load(image).into(holder.binding.image)
+
+        }else{
+            val image = "https://api.genshin.dev/characters/$character/icon-big"
+            Picasso.get().load(image).into(holder.binding.image)
+        }
     }
 
     override fun getItemCount(): Int {
         return characters.size
     }
+    fun String.capitalizeWords(): String = split(" ").map { it.capitalize() }.joinToString(" ")
 
 
 }
